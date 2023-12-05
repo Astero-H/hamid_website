@@ -1,10 +1,9 @@
-<?php
+  <?php
 use Dotenv\Dotenv;
 require 'vendor/autoload.php';
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
-
 
 ?>
 <!doctype html>
@@ -15,7 +14,8 @@ $dotenv->load();
   <title><?=$_ENV["SITE_TITLE"]?> </title>
 
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <!-- Twitter Meta -->
   <meta name="twitter:site" content="">
@@ -65,8 +65,8 @@ $dotenv->load();
 
 <body id="menu" class="body-page">
   <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+              <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
 
   <!-- Page Loader : just comment these lines to remove it -->
   <div class="page-loader" id="page-loader">
@@ -92,8 +92,8 @@ $dotenv->load();
     </button>
     <!-- End of menu icon toggler -->
 
- <!-- Begin of logo/brand -->
- <a class="navbar-brand" href="#">
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="#">
       <span class="logo">
         <img class="light-logo" src="public/img/misc/hamid_logo.jpg" alt="Logo">
       </span>
@@ -102,14 +102,13 @@ $dotenv->load();
         <span class="line sub">Software Developer PHP</span>
         <div id="theme_div">
           <span class="line sub text-theme"> Thème</span>
-          <label class="switch"> 
+          <label class="switch">
             <input id="mySwitch" class="switch" type="checkbox">
-              <span class="slider round"> </span>
-            </label>
-        </div> 
+            <span class="slider round"> </span>
+          </label>
+        </div>
       </span>
     </a>
-
 
     <!-- begin of menu wrapper -->
     <div class="all-menu-wrapper" id="navbarMenu">
@@ -205,8 +204,8 @@ $dotenv->load();
             <div class="col-12 col-md-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-                <h2 class="display-4 display-title home-title bordered anim-1"><?= $_ENV['FIRSTNAME'] ?></h2>
-                <h4 class="anim-2"> <?= $_ENV['INTRO_TEXT'] ?>
+                <h2 class="display-4 display-title home-title bordered anim-1"><?=$_ENV['FIRSTNAME']?></h2>
+                <h4 class="anim-2"> <?=$_ENV['INTRO_TEXT']?>
                 </h4>
               </div>
 
@@ -221,7 +220,7 @@ $dotenv->load();
             <!-- begin of right content -->
             <div class="col-12 col-sm-6 col-md-5 center-vh">
               <div class="img-avatar-alpha">
-                  <img class="img" src="public/img/misc/ahen1.jpg" alt="Image">
+                <img class="img" src="public/img/misc/ahen1.jpg" alt="Image">
               </div>
             </div>
 
@@ -267,8 +266,6 @@ $dotenv->load();
     </div>
     <!-- End of home bio -->
 
-    
-
     <div class="section section-description fp-auto-height-responsive " data-section="about">
       <!-- Begin of section wrapper -->
       <div class="section-wrapper center-vh dir-col anim">
@@ -282,8 +279,7 @@ $dotenv->load();
         <div class="section-content reduced anim text-center">
           <!-- title and description -->
           <div class="btns-action anim-3" id="buttonCV">
-            <?=
-                '<a href="downloadCV.php?file=' . urlencode($_ENV['CV_FR_FILE']) . '";> 
+            <?='<a href="downloadCV.php?file=' . urlencode($_ENV['CV_FR_FILE']) . '";>
                   <img class="myCV" src="public/img/misc/CV.png" title="Download" alt="Download"/>
                 </a>'?>
           </div>
@@ -292,144 +288,37 @@ $dotenv->load();
       <!-- End of section wrapper -->
     </div>
 
+    <!-- End of section wrapper -->
+    <!-- <section class="cd-horizontal-timeline"> -->
 
-  
+    <!-- <div class="timeline">
+      <div class="events-wrapper">
+        <div class="events">
+          <ol>
+            <li><a href="#0" data-date="01/01/2017" class="selected">Jan 2017</a></li>
+            <li><a href="#0" data-date="01/09/2017">Sep 2017</a></li>
+            <li><a href="#0" data-date="01/12/2017">Dec 2017</a></li>
+            <li><a href="#0" data-date="01/03/2018">Mar 2018</a></li>
+            <li><a href="#0" data-date="09/05/2018">June 2018</a></li>
+            <li><a href="#0" data-date="01/01/2019">Jan 2019</a></li>
+          </ol>
 
-      
-      <!-- End of section wrapper -->
-      <!-- <section class="cd-horizontal-timeline"> -->
+          <span class="filling-line" aria-hidden="true"></span>
+        </div>
+      </div>
 
+      <ul class="cd-timeline-navigation">
+        <li><a href="#0" class="prev inactive">Prev</a></li>
+        <li><a href="#0" class="next">Next</a></li>
+      </ul> -->
+    <!-- </div>   -->
 
-	<!-- <div class="timeline">
-		<div class="events-wrapper">
-			<div class="events">
-				<ol>
-					<li><a href="#0" data-date="01/01/2017" class="selected">Jan 2017</a></li>
-					<li><a href="#0" data-date="01/09/2017">Sep 2017</a></li>
-					<li><a href="#0" data-date="01/12/2017">Dec 2017</a></li>
-					<li><a href="#0" data-date="01/03/2018">Mar 2018</a></li>
-					<li><a href="#0" data-date="09/05/2018">June 2018</a></li>
-          <li><a href="#0" data-date="01/01/2019">Jan 2019</a></li>
-				</ol>
-
-				<span class="filling-line" aria-hidden="true"></span>
-			</div> 
-		</div> 
-			
-		<ul class="cd-timeline-navigation">
-			<li><a href="#0" class="prev inactive">Prev</a></li>
-			<li><a href="#0" class="next">Next</a></li>
-		</ul> -->
-	<!-- </div>   -->
-	
     <!-- End of description section -->
 
-    <!-- Begin of list feature section -->
-    <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
-      <!-- Begin of section wrapper -->
-      <div class="section-wrapper twoside anim">
-        <!-- title -->
-        <div class="section-title text-center">
-          <h2 class="display-4 display-title title-bg">Services</h2>
-          <p class="anim-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet
-            malesuada feugiat.</p>
-        </div>
-
-        <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
-        <!-- begin of item -->
-        <div class="item row justify-content-between fade-1">
-          <!-- begin of column content -->
-          <div class="col-12 col-md-6 col-lg-6">
-            <!-- content -->
-            <div class="section-content">
-              <!-- a media object -->
-              <div class="media">
-                <div class="img d-flex mr-3">
-                  <i class="icon ion-ios-browsers-outline"></i>
-                </div>
-                <div class="media-body">
-                  <h4>Design</h4>
-                  <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                    vestibulum in vulputate at.</p>
-                </div>
-              </div>
-              <!-- a media object -->
-              <div class="media">
-                <div class="img d-flex mr-3">
-                  <i class="icon ion-ios-cog-outline"></i>
-                </div>
-                <div class="media-body">
-                  <h4>Coding</h4>
-                  <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                    vestibulum in vulputate at..</p>
-                </div>
-              </div>
-              <!-- a media object -->
-              <div class="media">
-                <div class="img d-flex mr-3">
-                  <i class="icon ion-ios-analytics-outline"></i>
-                </div>
-                <div class="media-body">
-                  <h4>Analytics</h4>
-                  <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                    vestibulum in vulputate at.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end of column content -->
-
-          <!-- begin of column content -->
-          <div class="col-12 col-md-6 col-lg-6">
-            <!-- content -->
-            <div class="section-content">
-              <!-- a media object -->
-              <div class="media">
-                <div class="img d-flex mr-3">
-                  <i class="icon ion-ios-grid-view-outline"></i>
-                </div>
-                <div class="media-body">
-                  <h4>Concept</h4>
-                  <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                    vestibulum in vulputate at.</p>
-                </div>
-              </div>
-              <!-- a media object -->
-              <div class="media">
-                <div class="img d-flex mr-3">
-                  <i class="icon ion-ios-lightbulb-outline"></i>
-                </div>
-                <div class="media-body">
-                  <h4>Development</h4>
-                  <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                    vestibulum in vulputate at.</p>
-                </div>
-              </div>
-              <!-- a media object -->
-              <div class="media">
-                <div class="img d-flex mr-3">
-                  <i class="icon ion-arrow-expand"></i>
-                </div>
-                <div class="media-body">
-                  <h4>Marketing</h4>
-                  <p>Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
-                    vestibulum in vulputate at.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end of column content -->
-        </div>
-        <!-- end of item -->
-      </div>
-      <!-- End of section wrapper -->
-    </div>
-    <!-- End of list feature section -->
-
-   <!-- Begin of contact section -->
+    <!-- Begin of contact section -->
     <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
 
-     <!-- begin of message slide -->
+      <!-- begin of message slide -->
       <div class="slide" id="message" data-anchor="message">
         <!-- Begin of slide section wrapper -->
         <div class="section-wrapper">
@@ -445,7 +334,6 @@ $dotenv->load();
                     <p>Pour toute demande merci de compléter le formulaire.</p>
                   </div>
                 </div>
-
               </div>
             </div>
 
@@ -457,30 +345,31 @@ $dotenv->load();
                   <div class="form-container form-container-card">
                     <!-- Message form container -->
                     <form class="send_message_form message form" method="post" action="ajaxserver/server.php"
-                    id="message_form">
+                      id="message_form">
                       <div class="form-group name">
                         <label for="mes-name">Nom :</label>
-                        <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean"
-                        required>
+                        <input id="mes-name" name="name" type="text" placeholder=""
+                          class="form-control-line form-success-clean" required>
                       </div>
                       <div class="form-group email">
                         <label for="mes-email">Email :</label>
-                        <input id="mes-email" type="email" placeholder="" name="email" class="form-control-line form-success-clean"
-                        required>
+                        <input id="mes-email" type="email" placeholder="" name="email"
+                          class="form-control-line form-success-clean" required>
                       </div>
                       <div class="form-group no-border">
                         <label for="mes-text">Message</label>
-                        <textarea id="mes-text" placeholder="..." name="message" class="form-control form-control-outline thick form-success-clean"
-                        required></textarea>
+                        <textarea id="mes-text" placeholder="..." name="message"
+                          class="form-control form-control-outline thick form-success-clean" required></textarea>
 
                         <div>
-                          <p class="message-ok invisible form-text-feedback form-success-visible">Votre message a été envoyé. Merci :)</p>
+                          <p class="message-ok invisible form-text-feedback form-success-visible">Votre message a été
+                            envoyé. Merci :)</p>
                         </div>
                       </div>
 
                       <div class="btns">
                         <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b"
-                        name="submit_message">
+                          name="submit_message">
                           <span class="txt">Envoyer</span>
                           <span class="arrow-icon"></span>
                         </button>
@@ -515,7 +404,7 @@ $dotenv->load();
     <div class="footer-right">
       <ul class="social">
         <li>
-          <a href= "https://github.com/Astero-H" target="_blank">
+          <a href="https://github.com/Astero-H" target="_blank">
             <i class="icon fa fa-github"></i>
           </a>
         </li>
@@ -549,5 +438,5 @@ $dotenv->load();
 
 </body>
 <script src="./public/js/timeline.js"></script>
-</html>
 
+</html>
