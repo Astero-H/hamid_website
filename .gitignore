@@ -5,7 +5,13 @@
 composer.phar
 /vendor/
 
+# env files
 .env
+.env.local
 
 # Composer PHAR
 /composer.phar
+
+# Personal data
+/public/CV
+/public/img/misc
