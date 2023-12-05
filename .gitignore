@@ -1,0 +1,11 @@
+# Created by https://www.toptal.com/developers/gitignore/api/composer,symfony
+# Edit at https://www.toptal.com/developers/gitignore?templates=composer,symfony
+
+### Composer ###
+composer.phar
+/vendor/
+
+.env
+
+# Composer PHAR
+/composer.phar
