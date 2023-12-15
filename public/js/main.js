@@ -605,12 +605,7 @@ $(document).on('ready', function () {
 	}
 
 	$("#mySwitch").change(function() {
-		if(this.checked === true) {
-			$("video").css("display", "block");
-		} else {
-			$("video").css("display", "none")
-			
-		}
+		this.checked === true ? $("video").fadeIn(2000) : $("video").fadeOut(2000);
 	});
 
 });
