@@ -1,6 +1,5 @@
 <?php
 
-require_once '../.env.php';
 // Set the header response to JSON
 header('Content-type: application/json');
 
@@ -18,7 +17,7 @@ if (isset($_POST['submit_message'])) {
     $name = trim($_POST['name']);
     $product = trim($_POST['product']);
     $message = trim($_POST['message']);
-    
+    $recipient = "ahhennane@gmail.com";
     
     $email = filter_var(@$_POST['email'], FILTER_SANITIZE_EMAIL );
     
@@ -43,7 +42,6 @@ if (isset($_POST['submit_message'])) {
     // Process to emailing if forms are correct
     if (!isset($response['error']) || $response['error'] === '') {
         
-        
         /* in this sample code, messages will be stored in a text file */
         //        PROCESS TO STORE MESSAGE GOES HERE
         
@@ -55,7 +53,6 @@ if (isset($_POST['submit_message'])) {
         // -- BELOW : EXAMPLE SEND YOU AN EMAIL CONTAINING THE MESSAGE (comment to disable it/ uncomment it to enable it)
         // Set the recipient email address.
         // IMPORTANT - FIXME: Update this to your desired email address (relative to your server domaine).
-        $recipient = $_ENV["RECIPIENT"];
         
         // Set the email subject.
         $subject = "Need support message From ".$name;

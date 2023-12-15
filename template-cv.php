@@ -450,7 +450,7 @@
 
                         <div>
                           <p class="message-ok invisible form-text-feedback form-success-visible">Votre message a été
-                            envoyé. Merci :)</p>
+                            envoyé. </p>
                         </div>
                       </div>
 
