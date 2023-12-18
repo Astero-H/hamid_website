@@ -1,6 +1,6 @@
 <?php
 use Dotenv\Dotenv;
-require 'vendor/autoload.php';
+require_once 'vendor/autoload.php';
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 require 'template-cv.php';
