@@ -90,7 +90,7 @@
         <span class="line"> <?= $_ENV['FIRSTNAME'] . " " . $_ENV['LASTNAME'] ?></span>
         <span class="line sub"><?= $_ENV['JOB_TITLE'] ?></span>
         <div id="theme_div">
-          <span class="line sub text-theme">Thème</span>
+          <span class="line sub text-theme"><?= $titleTheme ?></span>
           <label class="switch">
             <input id="mySwitch" class="switch" type="checkbox">
             <span class="slider round"> </span>
@@ -106,15 +106,15 @@
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#home"> Bienvenue
+            <a class="nav-link" href="#home"> <?= $menu['welcome']?>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">CV</a>
+            <a class="nav-link" href="#about"><?= $menu['cv']?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact"><?= $menu['contact']?></a>
           </li>
         </ul>
       </nav>
@@ -126,31 +126,31 @@
           <li class="nav-item" data-menuanchor="home">
             <a href="#home">
               <i class="icon ion-ios-home-outline"></i>
-              <span class="txt">Bienvenue</span>
+              <span class="txt"><?= $menu['welcome']?></span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="bio">
             <a href="#bio">
               <i class="icon ion-ios-information-outline"></i>
-              <span class="txt"> Parcours </span>
+              <span class="txt"> <?= $menu['story']?> </span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="about">
             <a href="#about">
               <i class="icon ion-ios-information-outline"></i>
-              <span class="txt"> Curriculum </span>
+              <span class="txt"> <?= $menu['cv']?> </span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="services">
             <a href="#services">
               <i class="icon ion-ios-list-outline"></i>
-              <span class="txt"> Technologies </span>
+              <span class="txt"> <?= $menu['skills']?> </span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="contact">
             <a href="#contact/message">
               <i class="icon ion-ios-telephone-outline"></i>
-              <span class="txt">Contact</span>
+              <span class="txt"><?= $menu['contact']?></span>
             </a>
           </li>
         </ul>
@@ -162,6 +162,7 @@
   </header>
   <!-- END OF site header Menu-->
   <!-- BEGIN OF page cover -->
+  
   <div class="page-cover">
     <!-- Cover Background -->
     <div class="cover-bg bg-img" data-image-src="public/img/bg-default.jpg"></div>
@@ -193,14 +194,14 @@
               <!-- title and description -->
               <div class="title-desc">
                 <h2 class="display-4 display-title home-title bordered anim-1"><?=$_ENV['FIRSTNAME']?></h2>
-                <h4 class="anim-2"> <?=$_ENV['INTRO_TEXT']?>
+                <h4 class="anim-2"> <?=$introText?>
                 </h4>
               </div>
 
               <!-- Action button -->
               <div class="btns-action anim-3">
                 <a class="btn btn-outline-white btn-round" href="#bio">
-                  <b> On y va ? </b>
+                  <b> <?= $titleGo ?> </b>
                 </a>
               </div>
             </div>
@@ -226,7 +227,7 @@
       <div class="section-wrapper">
         <!-- title -->
         <div class="section-title text-center">
-          <h5 class="title-bg">PARCOURS</h5>
+          <h5 class="title-bg"><?= $menu['story'] ?></h5>
         </div>
         <!-- content -->
         <div class="section-content anim">
@@ -235,7 +236,7 @@
               <!-- title and description -->
               <div class="title-desc">
               <h2 class="display-4 display-title home-title bordered anim-1"> BIO </h2>
-                <h4 class="anim-2 size-2"> <?=$_ENV["BIO_TXT"]?>
+                <h4 class="anim-2 size-2"> <?= $bioText ?>
                 </h4>
               </div>
             </div>
@@ -263,7 +264,7 @@
       <div class="section-wrapper center-vh dir-col anim">
         <!-- title -->
         <div class="section-title text-center">
-          <h5 class="title-bg">Curriculum</h5>
+          <h5 class="title-bg"><?= $menu['cv'] ?></h5>
           
         </div>
 
@@ -272,7 +273,7 @@
           <!-- title and description -->
           <div class="btns-action anim-3" id="buttonCV">
             <?='<a href="downloadCV.php?file=' . urlencode($_ENV['CV_FR_FILE']) . '";>
-                  <img class="myCV" src=' . $_ENV["IMG_PATH"] . "/" . $_ENV["IMG_CV"] .' title="Download" alt="Download"/>
+                  <img class="myCV" src=' . $_ENV["IMG_PATH"] . "/" . $_ENV["IMG_CV"] .' title=' . $download .' alt=' .$download . '/>
                 </a>'?>
           </div>
         </div>
@@ -280,41 +281,13 @@
       <!-- End of section wrapper -->
     </div>
 
-    <!-- End of section wrapper -->
-    <!-- <section class="cd-horizontal-timeline"> -->
-
-    <!-- <div class="timeline">
-      <div class="events-wrapper">
-        <div class="events">
-          <ol>
-            <li><a href="#0" data-date="01/01/2017" class="selected">Jan 2017</a></li>
-            <li><a href="#0" data-date="01/09/2017">Sep 2017</a></li>
-            <li><a href="#0" data-date="01/12/2017">Dec 2017</a></li>
-            <li><a href="#0" data-date="01/03/2018">Mar 2018</a></li>
-            <li><a href="#0" data-date="09/05/2018">June 2018</a></li>
-            <li><a href="#0" data-date="01/01/2019">Jan 2019</a></li>
-          </ol>
-
-          <span class="filling-line" aria-hidden="true"></span>
-        </div>
-      </div>
-
-      <ul class="cd-timeline-navigation">
-        <li><a href="#0" class="prev inactive">Prev</a></li>
-        <li><a href="#0" class="next">Next</a></li>
-      </ul> -->
-    <!-- </div>   -->
-
-    <!-- End of description section -->
-
-
         <!-- Begin of list feature section -->
         <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
       <!-- Begin of section wrapper -->
       <div class="section-wrapper twoside anim">
         <!-- title -->
         <div class="section-title text-center">
-          <h2 class="display-4 display-title title-bg">Tech</h2>
+          <h2 class="display-4 display-title title-bg"><?= $titleSkills ?></h2>
         </div>
 
         <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
@@ -330,7 +303,7 @@
                   <iconify-icon icon="ion:code" width="60"></iconify-icon>
                 </div>
                 <div class="media-body">
-                  <h4>Langages</h4>
+                  <h4>Languages</h4>
                   <p> PHP | Javascript | Python | HTML5 | CSS3 </p>
                 </div>
               </div>
@@ -417,8 +390,8 @@
                 <div class="title-desc">
                   <div>
                     <!--<h5>Customer Service</h5>-->
-                    <h2 class="display-4 display-title">CONTACT</h2>
-                    <p>Pour toute demande merci de compléter le formulaire.</p>
+                    <h2 class="display-4 display-title"><?= $menu['contact'] ?> </h2>
+                    <p> <?= $contactFormText ?> </p>
                   </div>
                 </div>
               </div>
@@ -434,7 +407,7 @@
                     <form class="send_message_form message form" method="post" action="ajaxserver/server.php"
                       id="message_form">
                       <div class="form-group name">
-                        <label for="mes-name">Nom :</label>
+                        <label for="mes-name"><?= $nameInputMail ?> :</label>
                         <input id="mes-name" name="name" type="text" placeholder=""
                           class="form-control-line form-success-clean" required>
                       </div>
@@ -444,20 +417,19 @@
                           class="form-control-line form-success-clean" required>
                       </div>
                       <div class="form-group no-border">
-                        <label for="mes-text">Message</label>
+                        <label for="mes-text"><?= $messageInputMail ?></label>
                         <textarea id="mes-text" placeholder="..." name="message"
                           class="form-control form-control-outline thick form-success-clean" required></textarea>
 
                         <div>
-                          <p class="message-ok invisible form-text-feedback form-success-visible">Votre message a été
-                            envoyé. </p>
+                          <p class="message-ok invisible form-text-feedback form-success-visible"><?= $successMailMsg ?> </p>
                         </div>
                       </div>
 
                       <div class="btns">
                         <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b"
                           name="submit_message">
-                          <span class="txt">Envoyer</span>
+                          <span class="txt"><?= $sendButton ?></span>
                           <span class="arrow-icon"></span>
                         </button>
                       </div>
