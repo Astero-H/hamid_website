@@ -189,12 +189,12 @@
       <div class="section-wrapper">
         <!-- content -->
         <div class="section-content anim">
+        <h2 class="display-4 display-title home-title bordered anim-1 text-center"><?=$_ENV['FIRSTNAME']?></h2>
           <div class="row">
-            <div class="col-12 col-md-6 text-left">
+            <div class="col-12 col-md-6 text-center">
               <!-- title and description -->
               <div class="title-desc">
-                <h2 class="display-4 display-title home-title bordered anim-1"><?=$_ENV['FIRSTNAME']?></h2>
-                <h4 class="anim-2"> <?=$introText?>
+                <h4 class="anim-2 size-2"> <?=$introText?>
                 </h4>
               </div>
 
@@ -235,7 +235,7 @@
             <div class="col-12 col-md-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-              <h2 class="display-4 display-title home-title bordered anim-1"> BIO </h2>
+              <h2 class="display-4 display-title home-title bordered anim-1 text-center"> BIO </h2>
                 <h4 class="anim-2 size-2"> <?= $bioText ?>
                 </h4>
               </div>
@@ -271,6 +271,7 @@
         <!-- content -->
         <div class="section-content reduced anim text-center">
           <!-- title and description -->
+          <h2 class="display-4 display-title home-title bordered anim-1"> CV </h2>
           <div class="btns-action anim-3" id="buttonCV">
             <?='<a href="downloadCV.php?file=' . urlencode($_ENV['CV_FR_FILE']) . '";>
                   <img class="myCV" src=' . $_ENV["IMG_PATH"] . "/" . $_ENV["IMG_CV"] .' title=' . $download .' alt=' .$download . '/>
@@ -289,7 +290,7 @@
         <div class="section-title text-center">
           <h2 class="display-4 display-title title-bg"><?= $titleSkills ?></h2>
         </div>
-
+        <h2 class="display-4 display-title home-title bordered anim-1 text-center"> <?= $titleSkills ?> </h2>
         <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
         <!-- begin of item -->
         <div class="item row fade-1 tech">
@@ -297,11 +298,11 @@
           <div class="col-12 col-md-6 col-lg-6">
             <!-- content -->
             <div class="section-content">
-              <!-- a media object -->
+              <!-- a media object -->   
               <div class="media techno-media">
                 <div class="img d-flex mr-5">
                   <iconify-icon icon="ion:code" width="60"></iconify-icon>
-                </div>
+                </div>          
                 <div class="media-body">
                   <h4>Languages</h4>
                   <p> PHP | Javascript | Python | HTML5 | CSS3 </p>
