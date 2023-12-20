@@ -9,6 +9,6 @@ $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
 $acceptLang = ['fr', 'es', 'en']; 
 $lang = in_array($lang, $acceptLang) ? $lang : 'en';
 include_once $_ENV['LANG_PATH'] . "/txt_{$lang}.php"; 
-
+include_once "test_openai.php";
 require 'template-cv.php';
 ?>
