@@ -32,25 +32,7 @@
                   <li> Création de nouvelles features et bugfix (Redmine)</li>
                 </ul>
                 <p class="text-syspay">
-                  En qualité de développeur fullstack PHP, je travaillais en collaboration étroite avec d'autres
-                  développeurs sur le système de paiement proposé par Syspay. Syspay propose
-                  des services de paiement utilisés par des boutiques e-commerce, éditeurs de logiciels et plateformes
-                  numériques.<br><br>
-
-                  Mon travail consistait à trouver des solutions aux problèmes rencontrés sur l'application Syspay par
-                  des collaborateurs ou membres de la société. Je devais également
-                  mettre en place de nouvelles fonctionnalités et renseigner la documentation relative à l'application.
-                  Entre-autres je devais apporter une analyse du code métier
-                  et rétro-documenter le fonctionnement de modules ou parties complexes de l'application.<br>
-
-                  Syspay propose une API sur laquelle j'ai eu l'occasion de travailler à travers des tests de paiements
-                  spécifiques, des modifications de méthodes de paiements ou de mises
-                  de solutions d'API tierces (service d'encaissement), j'ai pu travailler sur le moteur de transaction
-                  Syspay.<br><br>
-
-                  Cette expérience m'a permis d'en apprendre beaucoup sur les fournisseurs de paiements, les
-                  intéractions entre les différents acteurs d'une transaction mais également
-                  les règles indispensables de sécurité qui découlent de ces opérations.<br>
+                  
                 </p>
               </div>
             </div>
