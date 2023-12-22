@@ -5077,3 +5077,11 @@ video {
   margin-top:12%;
 }
 
+
+.article-content .text-syspay {
+  font-size: 13px !important;
+}
+
+.article-content ul li {
+  font-size: 14px ;
+}
