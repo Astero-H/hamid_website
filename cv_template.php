@@ -240,23 +240,30 @@
                 <h2 class="display-4 display-title home-title bordered anim-1 text-center"> BIO </h2>
                 <h4 class="anim-2 size-2"> <?= $bioText ?>
                 </h4>
+                <div class="btns-action anim-3 see-xp">
+                  <a class="btn btn-outline-white btn-round" href="#projects">
+                    <b> <?= $buttonSeeXp ?> </b>
+                  </a>
+              </div>
               </div>
             </div>
 
             <!-- begin of right content -->
             <div class="col-12 col-md-6 right-content hidden-sm">
-              <!-- content -->
+              
               <div class="section-content">
-                <!-- illustartion -->
                 <div class="illustr zoomout-1">
                   <div id="text-anim"></div>
                 </div>
               </div>
             </div>
+            
             <!-- end of right content -->
           </div>
         </div>
       </div>
+
+              
       <!-- End of section wrapper -->
     </div>
     <!-- End of home bio -->
@@ -338,7 +345,7 @@
               <li class="slide-item swiper-slide">
                 <div class="item-wrapper">
                   <div class="illustr">
-                    <img src="" alt="Image" class="img">
+                    <!-- <img src="" alt="Image" class="img"> -->
                   </div>
                   <a class="legend" href="#">
                     <h3 class="display-3">ISPED - Université Bordeaux</h3>
@@ -351,7 +358,7 @@
               <li class="slide-item swiper-slide">
                 <div class="item-wrapper">
                   <div class="illustr">
-                    <img src="" alt="Image" class="img">
+                    <!-- <img src="" alt="Image" class="img"> -->
                   </div>
                   <a class="legend" href="#">
                     <h3 class="display-3"></h3>

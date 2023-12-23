@@ -17,8 +17,12 @@
                     <h5 class="mt-0 media-title">
                       <strong>SYSPAY - PHP Fullstack Developer</strong>
                     </h5>
-                    <p class="mb-0 t-nowrap"></p>
                     <p class="mb-0 t-nowrap">November 2022 - October 2023 </p>
+                    <p class="mb-1 t-nowrap">
+                      <a href="https://syspay.com" target="_blank"> Syspay </a> | 
+                      <a href="https://receptio.net/fr" target="_blank"> Receptio </a> | 
+                      <a href="https://app.syspay.com/docs/api" target="_blank"> API Syspay </a>
+                    </p>   
                   </div>
                 </div>
               </div>
@@ -61,7 +65,7 @@
                     <h5 class="mt-0 media-title">
                       <strong>Technologies</strong>
                     </h5>
-                    <p class="mb-0 t-nowrap"> Symfony 4 - PHP 7 - JQuery - Doctrine - Docker - Postman - Kibana - Git -
+                    <p class="mb-0 t-nowrap"> Symfony 4 - PHP 7 - JQuery - Doctrine - MySQL - MongoDB - Docker - Postman - Kibana - Git -
                       Bash - REST </p>
                   </div>
                 </div>

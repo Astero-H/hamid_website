@@ -19,6 +19,11 @@
                     </h5>
                     <p class="mb-0 t-nowrap"></p>
                     <p class="mb-0 t-nowrap">Octobre 2019 - Octobre 2022 </p>
+                    <p class="mb-0 t-nowrap">
+                      <a href="https://mbd-webapps.safranmbd.com/applis.php" target="_blank"> Perfo@Suppliers (Safran) </a> | 
+                      <a href="https://landingpad.safranmbd.com/lp/"  target="blank"> Claims and Repairs (Safran) </a> | 
+                      <a href="https://www.kalhyge.fr/" target="blank"> Health and Safety (Kalhyge) </a> 
+                    </p>
                   </div>
                 </div>
               </div>
@@ -36,7 +41,15 @@
                   <li> Transition de projet : reporting, installation, livraison, transfert de connaissances </li>
                 </ul>
                 <p class="text-cgi">
-                  En construction ...
+                  J’ai travaillé chez CGI en tant que développeur analyste PHP en collaboration avec d'autres développeurs sur site, mais également à distance. 
+                  Au bout d’une année, je suis devenu lead développeur de l’application Perfo@Suppliers. Cette application permettait de calculer les performances fournisseurs 
+                  d’un fleuron français de l’aéronautique. Mon travail avait pour but d’effectuer des correctifs et de créer de nouvelles fonctionnalités pour notre client. 
+                  Je faisais également de la rétro-documentation du projet pour pallier au manque d’information du code métier.
+                  Je travaillais en étroite collaboration avec les différents clients pour leur permettre de faire évoluer l’application dans le sens de leurs besoins. 
+                  Pour cela nous avions une réunion de projet mensuelle pour visualiser les correctifs et les livraisons et également définir les objectifs à atteindre.
+                  Je faisais également beaucoup de chiffrages des fonctionnalités qu’il fallait ensuite que je présente au client en lui justifiant précisément mes choix techniques.
+                  Je rédigeais des spécifications techniques et fonctionnelles à l’attention d’autres développeurs qui devaient coder certains modules et les guider dans 
+                  le processus de réalisation de nouvelles features...
                 </p>
               </div>
             </div>
@@ -47,7 +60,8 @@
                     <h5 class="mt-0 media-title">
                       <strong>Technologies</strong>
                     </h5>
-                    <p class="mb-0 t-nowrap"> ... </p>
+                    <p class="mb-0 t-nowrap"> PHP 7 - Laravel 5.X - VueJS - MySQL - CouchDB - Docker - Git - SVN
+                      Bash - SSH - REST </p>
                   </div>
                 </div>
               </div>
