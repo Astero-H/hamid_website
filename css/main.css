@@ -5087,8 +5087,8 @@ video {
 }
 
 
-.article-content .text-syspay {
-  font-size: 13px !important;
+.article-content .text-syspay, .article-content .text-cgi, .article-content .text-bob  {
+  font-size: 14px !important;
 }
 
 .article-content ul li {
@@ -5102,3 +5102,14 @@ video {
 }
 
 
+.title-company:hover {
+  color: #D1335B;
+  transition: 0.5s;
+}
+
+
+.desc-company:hover  {
+  font-weight: 900;
+  color: #D1335B;
+  transition: 0.5s;
+}
