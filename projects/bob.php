@@ -18,25 +18,18 @@
                           <strong>Bob Booking - Developer PHP</strong>
                         </h5>
                         <p class="mb-0 t-nowrap"></p>
-                        <p class="mb-0 t-nowrap">Septembre 2018 - Septembre 2019 </p>
+                        <p class="mb-0 t-nowrap"><?= $project['bob_dates'] ?> </p>
                       </div>
                     </div>
                   </div>
                 </header>
                 <div class="article-content">
                   <div class="wrapper">
-                    <h2>Bob Booking - Editeur de logiciels</h2>
+                    <h2>Bob Booking - Software Editor</h2>
                     <h2></h2>
-                    <ul>
-                      <li> Développement d’un micro-service d’import/export de fichiers</li>
-                      <li> Mise à jour de l’application BobBooking, refactoring de code</li>
-                      <li> Interrogation de l’API Graph Facebook pour mise à jour d’un référentiel</li>
-                      <li> Traitement statistiques de campagnes d’emailing</li>
-                      <li> Déploiement d’applications (Ansible) – Dockerisation</li>
-                      <li> Bugfix (Jira)</li>
-                    </ul>
+                    <?= $project['bob_list'] ?>
                     <p class="text-bob">
-                      En construction ...
+                      <?= $project['bob_txt'] ?>
                     </p>
 
                   </div>
@@ -46,9 +39,10 @@
                     <div class="media media-article-title">
                       <div class="media-body align-self-center">
                         <h5 class="mt-0 media-title">
-                          <strong>Technologies</strong>
+                          <strong><?= $tech ?></strong>
                         </h5>
-                        <p class="mb-0 t-nowrap"> ... </p>
+                        <p class="mb-0 t-nowrap"> Laravel - Lumen - Zend - PHP 7 - JQuery - MariaDB - VueJS - Docker - Ansible - Git -
+                      BashRC - REST - Fedora </p>
                       </div>
                     </div>
                   </div>
