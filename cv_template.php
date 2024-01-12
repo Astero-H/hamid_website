@@ -312,8 +312,8 @@
                     <img src="public/img/items/syspay_cover.jpg" alt="Image" class="img">
                   </div>
                   <a class="legend" href="projects/project_template.php?p=syspay">
-                    <h3 class="display-3"> Syspay</h3>
-                    <h4>E-Commerce</h4>
+                    <h3 class="title-company display-3"> Syspay</h3>
+                    <h4 class="desc-company">E-Commerce</h4>
                   </a>
                 </div>
               </li>
@@ -324,8 +324,8 @@
                     <img src="public/img/items/cgi_cover.jpg" alt="Image" class="img">
                   </div>
                   <a class="legend" href="projects/project_template.php?p=cgi">
-                    <h3 class="display-3">CGI</h3>
-                    <h4>Digital Service Company</h4>
+                    <h3 class="title-company display-3">CGI</h3>
+                    <h4 class="desc-company">Digital Service Company</h4>
                   </a>
                 </div>
               </li>
@@ -336,35 +336,8 @@
                     <img src="public/img/items/bob_cover.jpg" alt="Image" class="img">
                   </div>
                   <a class="legend" href="projects/project_template.php?p=bob">
-                    <h3 class="display-3">Bob Booking</h3>
-                    <h4>Software Company</h4>
-                  </a>
-                </div>
-              </li>
-              <!-- item -->
-              <li class="slide-item swiper-slide">
-                <div class="item-wrapper">
-                  <div class="illustr">
-                    <!-- <img src="" alt="Image" class="img"> -->
-                  </div>
-                  <a class="legend" href="#">
-                    <h3 class="display-3">ISPED - Université Bordeaux</h3>
-                    <h4>Santé Publique</h4>
-                    <h5> En construction ...</h5>
-                  </a>
-                </div>
-              </li>
-
-              <li class="slide-item swiper-slide">
-                <div class="item-wrapper">
-                  <div class="illustr">
-                    <!-- <img src="" alt="Image" class="img"> -->
-                  </div>
-                  <a class="legend" href="#">
-                    <h3 class="display-3"></h3>
-                    <h3 class="display-3">Port Maritime De Bordeaux</h3>
-                    <h4> Transport Fluvial </h4>
-                    <h5> En construction ...</h5>
+                    <h3 class="title-company display-3">Bob Booking</h3>
+                    <h4 class="desc-company">Software Company</h4>
                   </a>
                 </div>
               </li>
