@@ -19,6 +19,9 @@
                         </h5>
                         <p class="mb-0 t-nowrap"></p>
                         <p class="mb-0 t-nowrap"><?= $project['bob_dates'] ?> </p>
+                        <p class="mb-0 t-nowrap">
+                          <a href="https://bobelweb.eu/" target="_blank"> Bob El Web </a> 
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -51,7 +54,7 @@
 
               <!-- Action button -->
               <div class="btns-action mt-4">
-                <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" href="">
+              <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" href="project_template.php?p=syspay">
                   <span class="icon arrow-right"></span>
                   <span class="text">Next</span>
                 </a>
