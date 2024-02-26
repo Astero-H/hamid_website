@@ -48,11 +48,10 @@ if (isset($_POST['submit_message'])) {
         // IMPORTANT - FIXME: Update this to your desired email address (relative to your server domaine).
         
         // Set the email subject.
-        $subject = "Need support message From ".$name;
+        $subject = "New message from ".$name;
         
         // Build the email content.
         $email_content = $message."<br><br>";
-        $email_content .= "Sincerely, <br><br>";
         $email_content .= "From: $name <br><br>";
         $email_content .= "Email: $email<br><br>";
         
