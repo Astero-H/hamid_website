@@ -3414,7 +3414,7 @@ textarea {
   margin-bottom: 2rem; }
   @media (min-width: 768px) {
     .section-content .title-desc {
-      margin-bottom: 0rem; margin-top:13%; } }
+      margin-bottom: 0rem; } }
 
 .section-content .illustr img {
   width: 100%; }
@@ -4991,6 +4991,10 @@ input:checked + .slider:before {
     font-size: inherit;
     padding:12px
   }
+
+  div.see-xp {
+    margin-top: 5% !important;
+  } 
   
 }
 
@@ -5054,8 +5058,7 @@ input:checked + .slider:before {
     max-width: 100%;
   }
 
-  .see-xp {
-    margin-left:10%;
+  div.see-xp {
     margin-top: 5% !important;
   }
   

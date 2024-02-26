@@ -234,13 +234,13 @@
         <!-- content -->
         <div class="section-content anim">
           <div class="row">
-            <div class="col-12 col-md-6 text-left">
+            <div class="col-12 col-md-12 text-left">
               <!-- title and description -->
               <div class="title-desc">
                 <h2 class="display-4 display-title home-title bordered anim-1 text-center"> BIO </h2>
                 <h4 class="anim-2 size-2"> <?= $bioText ?>
                 </h4>
-                <div class="btns-action anim-3 see-xp">
+                <div class="btns-action anim-3 see-xp text-center">
                   <a class="btn btn-outline-white btn-round" href="#projects">
                     <b> <?= $buttonSeeXp ?> </b>
                   </a>
@@ -251,11 +251,11 @@
             <!-- begin of right content -->
             <div class="col-12 col-md-6 right-content hidden-sm">
               
-              <div class="section-content">
+              <!-- <div class="section-content">
                 <div class="illustr zoomout-1">
                   <div id="text-anim"></div>
                 </div>
-              </div>
+              </div> -->
             </div>
             
             <!-- end of right content -->
