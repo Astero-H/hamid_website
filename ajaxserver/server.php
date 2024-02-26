@@ -11,13 +11,11 @@ $response = array();
 if (isset($_POST['submit_message'])) {
     $email = trim($_POST['email']);
     $name = trim($_POST['name']);
-    $product = trim($_POST['product']);
     $message = trim($_POST['message']);
     $recipient = $_ENV['RECIPIENT'];
     $email = filter_var(@$email, FILTER_SANITIZE_EMAIL );
     
     $name = htmlentities($name);
-    $product = htmlentities($product);
     $message = htmlentities($message);
     
     // Validate data first

@@ -16,3 +16,7 @@ composer.phar
 /public/CV
 /public/img/misc
 /public/lang
+
+
+# Vscode xdebug
+.vscode/launch.json
