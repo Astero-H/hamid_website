@@ -20,3 +20,4 @@ composer.phar
 
 # Vscode xdebug
 .vscode/launch.json
+questions.php
