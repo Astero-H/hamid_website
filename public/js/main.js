@@ -298,33 +298,31 @@ $(document).on('ready', function () {
 		}
 	})
 
-	//11. Adding simple typing text animation
-	// var string = 'require "myNewJob.php";';
-	// var el = document.getElementById('text-anim');
-
-	// (function startAnimation() {
-	// 	var str = string.split("");
-	// 	var running;
-
-	// 	function animate() {
-	// 		$('#text-anim').fadeIn(1100);
-	// 		if(str.length > 0) {
-	// 			el.innerHTML += str.shift();
-	// 		} else {
-	// 			clearTimeout(running);
-	// 			$('#text-anim').fadeOut(2300); // Réinitialiser le contenu pour la prochaine animation
-	// 		}
-	// 	}
-
-	// 	running = setInterval(animate, 150);
-	// 	setTimeout(function() {
-	// 		clearInterval(running);
-	// 		$('#text-anim').fadeOut(2300);
-	// 	}, 7000);
-
-	// 	setTimeout(startAnimation, 8000);
-	// 	el.innerHTML = "";
-	// })();
+	//11. Ajax method to request the ChatGPT
+	$("#sendMessage").on('click', function (e) {
+		let message = $("#messageToBot").val();
+		if(message.trim() !== '') { 
+			$.ajax({
+                url: '../../chatbot.php', 
+                type: 'POST', 
+                data: {
+                    message: message
+                },
+                success: function(response) {
+                    // Traiter la réponse
+                    $("#contentMessage").append($('<p class="content-response">').text(response));
+                    $('#messageToBot').val(''); // Vider l'input après l'envoi
+                },
+                error: function(xhr, status, error) {
+                    // Gérer l'erreur
+                    console.error("Erreur AJAX : " + status);
+                }
+            });
+			
+		} else {
+            alert("Veuillez entrer un message.");
+        }
+	});
 
 
 

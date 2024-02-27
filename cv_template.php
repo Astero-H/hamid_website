@@ -112,6 +112,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact"><?= $menu['contact']?></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discussion"> Discussion</a>
+          </li>
         </ul>
       </nav>
       <!-- End of hamburger mainmenu menu -->
@@ -153,6 +156,12 @@
             <a href="#contact/message">
               <i class="icon ion-ios-telephone-outline"></i>
               <span class="txt"><?= $menu['contact']?></span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="discussion">
+            <a href="#discussion">
+              <i class="icon ion-chatbubbles"></i>
+              <span class="txt">Discussion</span>
             </a>
           </li>
         </ul>
@@ -532,6 +541,32 @@
       <!-- end of message slide -->
     </div>
     <!-- End of contact section -->
+
+  <!-- Begin of discussion section -->
+  <div class="section section-discussion fp-auto-height-responsive no-slide-arrows " data-section="discussion">
+
+<!-- begin of message slide -->
+  <!-- Begin of slide section wrapper -->
+  <div class="section-wrapper">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-12 center-vh">
+      <div class="chatbot-window content-response">
+      <div id="contentMessage"> </div>
+      <input id="messageToBot" placeholder="Please ask your question" type="text">
+      <button class="btnChatbot btn-outline-white btn-round text-center" id="sendMessage"> Send message</button>
+    </div>
+        
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-5">
+        
+      </div>
+    </div>
+  </div>
+  <!-- End of slide section wrapper -->
+</div>
+<!-- End of discussion section -->
+
   </main>
   <!-- END OF page main content -->
 
