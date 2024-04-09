@@ -582,6 +582,7 @@
   <!-- Javascript main files -->
   <script src="./public/js/main.js"></script>
 
+  <chat-bot platform_id="b54b64ad-06ca-4cf5-b144-0b0584d73187" user_id="118aea26-d8c5-491e-9f3d-8fa4b88f8120" chatbot_id="96ef1522-8131-47ed-8e44-cc2b85a5ed7b"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 </body>
 <script src="./public/js/timeline.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
