@@ -2954,7 +2954,7 @@ textarea {
   z-index: 10; }
   @media (min-width: 768px) {
     .page-footer .footer-right {
-      right: 64px;
+      right: 100px;
       bottom: 32px; } }
   .page-footer .footer-right .social {
     display: -webkit-box;
