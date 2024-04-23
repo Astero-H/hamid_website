@@ -4,11 +4,15 @@
     // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
-            "port": 9003
+            "port": 9003,
+            "pathMappings": {
+                "C:\\laragon\\www\\ahen-cv": "${workspaceFolder}"
+            }
         },
         {
             "name": "Launch currently open script",
@@ -17,7 +21,7 @@
             "program": "${file}",
             "cwd": "${fileDirname}",
             "port": 0,
-            "runtimeExecutable": "C:\\laragon\\bin\\php\\php-7.4.19-Win32-vc15-x64\\php.exe",
+            "runtimeExecutable": "C:\\laragon\\bin\\php\\php-8.1.10-Win32-vs16-x64\\php.exe",
             "runtimeArgs": [
                 "-dxdebug.start_with_request=yes"
             ],

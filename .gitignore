@@ -15,3 +15,8 @@ composer.phar
 # Personal data
 /public/CV
 /public/img/misc
+/public/lang
+
+
+# Vscode xdebug
+.vscode/launch.json

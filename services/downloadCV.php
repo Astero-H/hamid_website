@@ -1,14 +1,11 @@
 <?php 
-use Dotenv\Dotenv;
-require 'vendor/autoload.php';
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load(); 
+require_once '../bootstrap.php';
 
-$file = $_ENV['CV_FR_FILE'];
+$file = $lang === 'fr' ? $_ENV['CV_FR_FILE'] : $_ENV['CV_ENG_FILE'];
 $path = $_ENV['CV_PATH'];
 
 if(preg_match('/^[^.][-a-z0-9_.]+[a-z]$/i', $file)){
-    $filepath = $path ."/". $file;
+    $filepath = '../'.$path ."/". $file;
     // Process téléchargement
     if(file_exists($filepath)) {
         header('Content-Description: File Transfer');

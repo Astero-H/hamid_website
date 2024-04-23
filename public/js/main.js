@@ -299,32 +299,32 @@ $(document).on('ready', function () {
 	})
 
 	//11. Adding simple typing text animation
-	var string = 'require "myNewJob.php";';
-	var el = document.getElementById('text-anim');
+	// var string = 'require "myNewJob.php";';
+	// var el = document.getElementById('text-anim');
 
-	(function startAnimation() {
-		var str = string.split("");
-		var running;
+	// (function startAnimation() {
+	// 	var str = string.split("");
+	// 	var running;
 
-		function animate() {
-			$('#text-anim').fadeIn(1100);
-			if(str.length > 0) {
-				el.innerHTML += str.shift();
-			} else {
-				clearTimeout(running);
-				$('#text-anim').fadeOut(2300); // Réinitialiser le contenu pour la prochaine animation
-			}
-		}
+	// 	function animate() {
+	// 		$('#text-anim').fadeIn(1100);
+	// 		if(str.length > 0) {
+	// 			el.innerHTML += str.shift();
+	// 		} else {
+	// 			clearTimeout(running);
+	// 			$('#text-anim').fadeOut(2300); // Réinitialiser le contenu pour la prochaine animation
+	// 		}
+	// 	}
 
-		running = setInterval(animate, 150);
-		setTimeout(function() {
-			clearInterval(running);
-			$('#text-anim').fadeOut(2300);
-		}, 7000);
+	// 	running = setInterval(animate, 150);
+	// 	setTimeout(function() {
+	// 		clearInterval(running);
+	// 		$('#text-anim').fadeOut(2300);
+	// 	}, 7000);
 
-		setTimeout(startAnimation, 8000);
-		el.innerHTML = "";
-	})();
+	// 	setTimeout(startAnimation, 8000);
+	// 	el.innerHTML = "";
+	// })();
 
 
 
@@ -605,12 +605,7 @@ $(document).on('ready', function () {
 	}
 
 	$("#mySwitch").change(function() {
-		if(this.checked === true) {
-			$("video").css("display", "block");
-		} else {
-			$("video").css("display", "none")
-			
-		}
+		this.checked === true ? $("video").fadeIn(2000) : $("video").fadeOut(2000);
 	});
 
 });
