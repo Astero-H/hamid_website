@@ -4,30 +4,24 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title><?=$_ENV["SITE_TITLE"]?> </title>
-
   <meta name="description" content="">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
-
+  <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
   <!-- Facebook Meta -->
-  <meta property="og:url" content="your website url here">
-  <meta property="og:title" content="Page Title">
-  <meta property="og:description" content="Description of the page">
+  <meta property="og:url" content="https://hamid-hennane.fr">
+  <meta property="og:title" content="Abdel Hamid Hennane">
+  <meta property="og:description" content="This is the personal website of Abdel Hamid Hennane">
   <meta property="og:type" content="website">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
   <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
   <link rel="stylesheet" href="./fonts/bebas/stylesheet.css">
   <link rel="stylesheet" href="./fonts/ionicons.min.css">
   <link rel="stylesheet" href="./fonts/font-awesome.min.css">
-
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="./css/pageloader.css">
-
   <!-- Uncomment below to load individualy vendor CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./public/js/vendor/swiper.min.css">
@@ -35,13 +29,9 @@
   <link rel="stylesheet" href="./public/js/vegas/vegas.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
-
   <!-- Main CSS files -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/timeline.css">
-
-  <!-- add alt layout here -->
-
   <script src="./public/js/vendor/modernizr-2.7.1.min.js"></script>
 </head>
 
@@ -49,18 +39,14 @@
   <!--[if lt IE 8]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
-  <!-- Page Loader : just comment these lines to remove it -->
   <div class="page-loader" id="page-loader">
     <div>
       <div class="icon ion-spin"></div>
       <p>Chargement</p>
     </div>
   </div>
-
   <!-- BEGIN OF site header Menu -->
   <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
-
     <!-- Begin of menu icon toggler -->
     <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
       <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
@@ -77,13 +63,13 @@
     <!-- Begin of logo/brand -->
     <a class="navbar-brand" href="#">
       <span class="logo">
-        <img class="light-logo" src="<?= $_ENV['IMG_PATH'] . "/" . $_ENV['IMG_LOGO']?>" alt="Logo">
+        <img class="light-logo" src="<?=$_ENV['IMG_PATH'] . "/" . $_ENV['IMG_LOGO']?>" alt="Logo">
       </span>
       <span class="text">
-        <span class="line"> <?= $_ENV['FIRSTNAME'] . " " . $_ENV['LASTNAME'] ?></span>
-        <span class="line sub"><?= $_ENV['JOB_TITLE'] ?></span>
+        <span class="line"> <?=$_ENV['FIRSTNAME'] . " " . $_ENV['LASTNAME']?></span>
+        <span class="line sub"><?=$_ENV['JOB_TITLE']?></span>
         <div id="theme_div">
-          <span class="line sub text-theme"><?= $titleTheme ?></span>
+          <span class="line sub text-theme"><?=$titleTheme?></span>
           <label class="switch">
             <input id="mySwitch" class="switch" type="checkbox">
             <span class="slider round"> </span>
@@ -91,7 +77,6 @@
         </div>
       </span>
     </a>
-
     <!-- begin of menu wrapper -->
     <div class="all-menu-wrapper" id="navbarMenu">
       <!-- Begin of top menu -->
@@ -99,18 +84,21 @@
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#home"> <?= $menu['welcome']?>
+            <a class="nav-link" href="#home"> <?=$menu['welcome']?>
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about"><?= $menu['cv']?></a>
+            <a class="nav-link" href="#about"><?=$menu['cv']?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects"><?= $menu['projects']?></a>
+            <a class="nav-link" href="#projects"><?=$menu['projects']?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact"><?= $menu['contact']?></a>
+            <a class="nav-link" href="#contact"><?=$menu['contact']?></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discussion"> Discussion</a>
           </li>
         </ul>
       </nav>
@@ -122,37 +110,43 @@
           <li class="nav-item" data-menuanchor="home">
             <a href="#home">
               <i class="icon ion-ios-home-outline"></i>
-              <span class="txt"><?= $menu['welcome']?></span>
+              <span class="txt"><?=$menu['welcome']?></span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="bio">
             <a href="#bio">
               <i class="icon ion-ios-information-outline"></i>
-              <span class="txt"> <?= $menu['story']?> </span>
+              <span class="txt"> <?=$menu['story']?> </span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="about">
             <a href="#about">
               <i class="icon ion-ios-information-outline"></i>
-              <span class="txt"> <?= $menu['cv']?> </span>
+              <span class="txt"> <?=$menu['cv']?> </span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="projects">
             <a href="#projects">
               <i class="icon ion-ios-albums-outline"></i>
-              <span class="txt"><?= $menu['projects']?></span>
+              <span class="txt"><?=$menu['projects']?></span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="services">
             <a href="#services">
               <i class="icon ion-ios-list-outline"></i>
-              <span class="txt"> <?= $menu['skills']?> </span>
+              <span class="txt"> <?=$menu['skills']?> </span>
             </a>
           </li>
           <li class="nav-item" data-menuanchor="contact">
             <a href="#contact/message">
               <i class="icon ion-ios-telephone-outline"></i>
-              <span class="txt"><?= $menu['contact']?></span>
+              <span class="txt"><?=$menu['contact']?></span>
+            </a>
+          </li>
+          <li class="nav-item" data-menuanchor="discussion">
+            <a href="#discussion">
+              <i class="icon ion-chatbubbles"></i>
+              <span class="txt">Discussion</span>
             </a>
           </li>
         </ul>
@@ -203,7 +197,7 @@
               <!-- Action button -->
               <div class="btns-action anim-3">
                 <a class="btn btn-outline-white btn-round" href="#bio">
-                  <b> <?= $titleGo ?> </b>
+                  <b> <?=$titleGo?> </b>
                 </a>
               </div>
             </div>
@@ -211,7 +205,7 @@
             <!-- begin of right content -->
             <div class="col-12 col-sm-6 col-md-5 center-vh">
               <div class="img-avatar-alpha">
-                <img class="img candidate" src=<?= $_ENV['IMG_PATH'] . '/'. $_ENV['IMG_CANDIDATE_HAPPY'] ?> alt="Image">
+                <img class="img candidate" src=<?=$_ENV['IMG_PATH'] . '/' . $_ENV['IMG_CANDIDATE_HAPPY']?> alt="Image">
               </div>
             </div>
 
@@ -222,14 +216,13 @@
       <!-- End of section wrapper -->
     </div>
     <!-- End of home section -->
-
     <!-- Begin of bio -->
     <div class="section section-bio fullscreen-md fp-auto-height-responsive " data-section="bio">
       <!-- Begin of section wrapper -->
       <div class="section-wrapper">
         <!-- title -->
         <div class="section-title text-center">
-          <h5 class="title-bg"><?= $menu['story'] ?></h5>
+          <h5 class="title-bg"><?=$menu['story']?></h5>
         </div>
         <!-- content -->
         <div class="section-content anim">
@@ -238,32 +231,18 @@
               <!-- title and description -->
               <div class="title-desc">
                 <h2 class="display-4 display-title home-title bordered anim-1 text-center"> BIO </h2>
-                <h4 class="anim-2 size-2"> <?= $bioText ?>
+                <h4 class="anim-2 size-2"> <?=$bioText?>
                 </h4>
                 <div class="btns-action anim-3 see-xp text-center">
                   <a class="btn btn-outline-white btn-round" href="#projects">
-                    <b> <?= $buttonSeeXp ?> </b>
+                    <b> <?=$buttonSeeXp?> </b>
                   </a>
               </div>
               </div>
             </div>
-
-            <!-- begin of right content -->
-            <div class="col-12 col-md-6 right-content hidden-sm">
-              
-              <!-- <div class="section-content">
-                <div class="illustr zoomout-1">
-                  <div id="text-anim"></div>
-                </div>
-              </div> -->
-            </div>
-            
-            <!-- end of right content -->
           </div>
         </div>
       </div>
-
-              
       <!-- End of section wrapper -->
     </div>
     <!-- End of home bio -->
@@ -273,8 +252,7 @@
       <div class="section-wrapper center-vh dir-col anim">
         <!-- title -->
         <div class="section-title text-center">
-          <h5 class="title-bg"><?= $menu['cv'] ?></h5>
-
+          <h5 class="title-bg"><?=$menu['cv']?></h5>
         </div>
 
         <!-- content -->
@@ -283,7 +261,7 @@
           <h2 class="display-4 display-title home-title bordered anim-1"> CV </h2>
           <div class="btns-action anim-3" id="buttonCV">
             <?='<a href="services/downloadCV.php?file=' . urlencode($_ENV['CV_FR_FILE']) . '";>
-                  <img class="myCV" src=' . $_ENV["IMG_PATH"] . "/" . $_ENV["IMG_CV"] .' title=' . $download .' alt=' .$download . '/>
+                  <img class="myCV" src=' . $_ENV["IMG_PATH"] . "/" . $_ENV["IMG_CV"] . ' title=' . $download . ' alt=' . $download . '/>
                 </a>'?>
           </div>
         </div>
@@ -296,10 +274,6 @@
       <!-- Begin of section wrapper -->
       <div class="section-wrapper twoside">
         <!-- title -->
-        <!-- <div class="section-title text-center">
-          <h5 class="title-bg "></h5>
-        </div> -->
-
         <!-- begin of carousel-swiper-beta -->
         <div class="slider-wrapper carousel-swiper-beta carousel-smalls carousel-swiper-beta-demo mt-40">
           <!-- slider -->
@@ -373,9 +347,9 @@
       <div class="section-wrapper twoside anim">
         <!-- title -->
         <div class="section-title text-center">
-          <h2 class="display-4 display-title title-bg"><?= $titleSkills ?></h2>
+          <h2 class="display-4 display-title title-bg"><?=$titleSkills?></h2>
         </div>
-        <h2 class="display-4 display-title home-title bordered anim-1 text-center"> <?= $titleSkills ?> </h2>
+        <h2 class="display-4 display-title home-title bordered anim-1 text-center"> <?=$titleSkills?> </h2>
         <!-- text or illustration order are manipulated via Bootstrap order-md-1, order-md-2 class -->
         <!-- begin of item -->
         <div class="item row fade-1 tech">
@@ -416,7 +390,6 @@
             </div>
           </div>
           <!-- end of column content -->
-
           <!-- begin of column content -->
           <div class="col-12 col-md-6 col-lg-6">
             <!-- content -->
@@ -463,7 +436,6 @@
 
     <!-- Begin of contact section -->
     <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
-
       <!-- begin of message slide -->
       <div class="slide" id="message" data-anchor="message">
         <!-- Begin of slide section wrapper -->
@@ -476,8 +448,8 @@
                 <div class="title-desc">
                   <div>
                     <!--<h5>Customer Service</h5>-->
-                    <h2 class="display-4 display-title"><?= $menu['contact'] ?> </h2>
-                    <p> <?= $contactFormText ?> </p>
+                    <h2 class="display-4 display-title"><?=$menu['contact']?> </h2>
+                    <p> <?=$contactFormText?> </p>
                   </div>
                 </div>
               </div>
@@ -493,7 +465,7 @@
                     <form class="send_message_form message form" method="post" action="ajaxserver/server.php"
                       id="message_form">
                       <div class="form-group name">
-                        <label for="mes-name"><?= $nameInputMail ?> :</label>
+                        <label for="mes-name"><?=$nameInputMail?> :</label>
                         <input id="mes-name" name="name" type="text" placeholder=""
                           class="form-control-line form-success-clean" required>
                       </div>
@@ -503,12 +475,12 @@
                           class="form-control-line form-success-clean" required>
                       </div>
                       <div class="form-group no-border">
-                        <label for="mes-text"><?= $messageInputMail ?></label>
+                        <label for="mes-text"><?=$messageInputMail?></label>
                         <textarea id="mes-text" placeholder="..." name="message"
                           class="form-control form-control-outline thick form-success-clean" required></textarea>
 
                         <div>
-                          <p class="message-ok invisible form-text-feedback form-success-visible"><?= $successMailMsg ?>
+                          <p class="message-ok invisible form-text-feedback form-success-visible"><?=$successMailMsg?>
                           </p>
                         </div>
                       </div>
@@ -516,7 +488,7 @@
                       <div class="btns">
                         <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b"
                           name="submit_message">
-                          <span class="txt"><?= $sendButton ?></span>
+                          <span class="txt"><?=$sendButton?></span>
                           <span class="arrow-icon"></span>
                         </button>
                       </div>
@@ -532,30 +504,48 @@
       <!-- end of message slide -->
     </div>
     <!-- End of contact section -->
+  <!-- Begin of discussion section -->
+  <div class="section section-discussion fp-auto-height-responsive no-slide-arrows " data-section="discussion">
+<!-- begin of message slide -->
+  <!-- Begin of slide section wrapper -->
+  <div class="section-wrapper">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-12 center-vh">
+      <div class="chatbot-window content-response">
+      <div id="contentMessage"> </div>
+      <input id="messageToBot" placeholder="Please ask your question" type="text">
+      <button class="btnChatbot btn-outline-white btn-round text-center" id="sendMessage"> Send message</button>
+    </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-5">
+      </div>
+    </div>
+  </div>
+  <!-- End of slide section wrapper -->
+</div>
+<!-- End of discussion section -->
   </main>
   <!-- END OF page main content -->
-
   <!-- BEGIN OF page footer -->
   <footer id="site-footer" class="page-footer">
     <!-- Left content -->
     <div class="footer-left">
       <p>PHOTO BY
-        <a href=<?= $_ENV['LINK_ARTIST'] ?> target="_blank">
+        <a href=<?=$_ENV['LINK_ARTIST']?> target="_blank">
           <span class="marked">BASILIO PUGLIA</span>
         </a>
       </p>
     </div>
-
     <!-- Right content -->
     <div class="footer-right">
       <ul class="social">
         <li>
-          <a href=<?= $_ENV['LINK_GITHUB'] ?> target="_blank">
+          <a href=<?=$_ENV['LINK_GITHUB']?> target="_blank">
             <i class="icon fa fa-github"></i>
           </a>
         </li>
         <li>
-          <a href=<?= $_ENV['LINK_LINKEDIN'] ?> target="blank">
+          <a href=<?=$_ENV['LINK_LINKEDIN']?> target="blank">
             <i class="icon fa fa-linkedin"></i>
           </a>
         </li>
@@ -563,28 +553,20 @@
     </div>
   </footer>
   <!-- END OF site footer -->
-
   <!-- scripts -->
   <!-- All Javascript plugins goes here -->
   <script src="./public/js/vendor/jquery-1.12.4.min.js"></script>
-
   <!-- All vendor scripts -->
   <script src="./public/js/vendor/scrolloverflow.min.js"></script>
   <script src="./public/js/vendor/all.js"></script>
   <script src="./public/js/particlejs/particles.min.js"></script>
-
   <!-- Countdown script -->
   <script src="./public/js/jquery.downCount.js"></script>
-
   <!-- Form script -->
   <script src="./public/js/form_script.js"></script>
-
   <!-- Javascript main files -->
   <script src="./public/js/main.js"></script>
-
-  <chat-bot platform_id="b54b64ad-06ca-4cf5-b144-0b0584d73187" user_id="118aea26-d8c5-491e-9f3d-8fa4b88f8120" chatbot_id="96ef1522-8131-47ed-8e44-cc2b85a5ed7b"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 </body>
 <script src="./public/js/timeline.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
 </html>
