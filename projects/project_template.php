@@ -23,19 +23,19 @@
 
   <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
-  <link rel="stylesheet" href="./../fonts/opensans/stylesheet.css">
-  <link rel="stylesheet" href="./../fonts/bebas/stylesheet.css">
-  <link rel="stylesheet" href="./../fonts/ionicons.min.css">
-  <link rel="stylesheet" href="./../fonts/font-awesome.min.css">
+  <link href="./../fonts/opensans/stylesheet.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link href="./../fonts/bebas/stylesheet.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link href="./../fonts/ionicons.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link href="./../fonts/font-awesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="./../css/pageloader.css">
 
   <!-- Uncomment below to load individualy vendor CSS -->
   <link rel="stylesheet" href="./../css/bootstrap.min.css">
-  <link rel="stylesheet" href="./../js/vendor/swiper.min.css">
-  <link rel="stylesheet" href="./../public/js/vendor/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="./../public/js/vegas/vegas.min.css">
+  <link href="./../js/vendor/swiper.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link href="./../public/js/vendor/jquery.fullpage.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link href="./../public/js/vegas/vegas.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
   <!-- Main CSS files -->
   <link rel="stylesheet" href="./../css/main.css">
@@ -43,7 +43,7 @@
   <!-- add alt layout here -->
   <link rel="stylesheet" href="./../css/style-default.css">
 
-  <script src="./../public/js/vendor/modernizr-2.7.1.min.js"></script>
+  <script src="./../public/js/vendor/modernizr-2.7.1.min.js" defer></script>
 </head>
 
 <body id="menu" class="body-item">
@@ -181,21 +181,21 @@
 
   <!-- scripts -->
   <!-- All Javascript plugins goes here -->
-  <script src="./../public/js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="./../public/js/vendor/jquery-1.12.4.min.js" defer></script>
 
   <!-- All vendor scripts -->
-  <script src="./../public/js/vendor/scrolloverflow.min.js"></script>
-  <script src="./../public/js/vendor/all.js"></script>
-  <script src="./../public/js/particlejs/particles.min.js"></script>
+  <script src="./../public/js/vendor/scrolloverflow.min.js" defer></script>
+  <script src="./../public/js/vendor/all.js" defer></script>
+  <script src="./../public/js/particlejs/particles.min.js" defer></script>
 
   <!-- Countdown script -->
-  <script src="./../public/js/jquery.downCount.js"></script>
+  <script src="./../public/js/jquery.downCount.js" defer></script>
 
   <!-- Form script -->
-  <script src="./../public/js/form_script.js"></script>
+  <script src="./../public/js/form_script.js" defer></script>
 
   <!-- Javascript main files -->
-  <script src="./../public/js/main.js"></script>
+  <script src="./../public/js/main.js" defer></script>
   <chat-bot platform_id="b54b64ad-06ca-4cf5-b144-0b0584d73187" user_id="118aea26-d8c5-491e-9f3d-8fa4b88f8120" chatbot_id="96ef1522-8131-47ed-8e44-cc2b85a5ed7b"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 </body>
 </html>

@@ -19,16 +19,17 @@
   <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
   <link rel="stylesheet" href="./fonts/bebas/stylesheet.css">
   <link rel="stylesheet" href="./fonts/ionicons.min.css">
-  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link href="./fonts/font-awesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="./css/pageloader.css">
   <!-- Uncomment below to load individualy vendor CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link ref="./css/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="./public/js/vendor/swiper.min.css">
   <link rel="stylesheet" href="./public/js/vendor/jquery.fullpage.min.css">
   <link rel="stylesheet" href="./public/js/vegas/vegas.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+  <link rel="preload" as="style"  href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <!-- Main CSS files -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/timeline.css">
