@@ -84,7 +84,7 @@
 
     <a class="navbar-brand" href="#">
       <span class="logo">
-        <a href = ><img class="light-logo" src="<?= '../'.$_ENV['IMG_PATH'] . "/" . $_ENV['IMG_LOGO']?>" alt="Logo"> </a>
+        <img class="light-logo" src="<?= '../'.$_ENV['IMG_PATH'] . "/" . $_ENV['IMG_LOGO']?>" alt="Logo">
       </span>
       <span class="text">
         <span class="line"> <?= $_ENV['FIRSTNAME'] . " " . $_ENV['LASTNAME'] ?></span>
