@@ -14,26 +14,41 @@
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  <!-- Favicon.ico  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+
   <!-- Web fonts and Web Icons -->
-  <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/bebas/stylesheet.css">
-  <link rel="stylesheet" href="./fonts/ionicons.min.css">
-  <link href="./fonts/font-awesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="./fonts/opensans/stylesheet.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="./fonts/bebas/stylesheet.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/fonts/ionicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/fonts/ionicons.min.css"></noscript>
+  <link rel="preload" href="/fonts/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/fonts/font-awesome.min.css"></noscript>
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="./css/pageloader.css">
   <!-- Uncomment below to load individualy vendor CSS -->
-  <link ref="./css/bootstrap.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
   <link rel="stylesheet" href="./public/js/vendor/swiper.min.css">
   <link rel="stylesheet" href="./public/js/vendor/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="./public/js/vegas/vegas.min.css">
+  <link rel="stylesheet" href="./public/js/vegas/vegas.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preload" as="style"  href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <style>
+    .anim-2.size-2 {
+      font-size: 24px; 
+    }
+  </style>
   <!-- Main CSS files -->
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
   <link rel="stylesheet" href="./css/timeline.css">
-  <script src="./public/js/vendor/modernizr-2.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./public/js/vendor/modernizr-2.7.1.min.js" defer></script>
 </head>
 
 <body id="menu" class="body-page">
@@ -152,9 +167,6 @@
   <!-- BEGIN OF page cover -->
 
   <div class="page-cover">
-    <!-- Cover Background -->
-    <div class="cover-bg bg-img" data-image-src="public/img/bg-default.jpg"></div>
-
     <!--BEGIN OF Static video bg - uncomment below to use Video as Background-->
     <div id="container" class="video-container d-none d-sm-block">
       <video autoplay="autoplay" loop="loop" muted="muted" width="640" height="360">
@@ -275,7 +287,7 @@
               <li class="slide-item swiper-slide">
                 <div class="item-wrapper">
                   <div class="illustr">
-                    <img src="public/img/items/syspay_cover.jpg" alt="Image" class="img">
+                    <img src="public/img/items/syspay_cover.webp" alt="Image" class="img">
                   </div>
                   <a class="legend" href="projects/project_template.php?p=syspay">
                     <h3 class="title-company display-3"> Syspay</h3>
@@ -287,7 +299,7 @@
               <li class="slide-item swiper-slide">
                 <div class="item-wrapper">
                   <div class="illustr">
-                    <img src="public/img/items/cgi_cover.jpg" alt="Image" class="img">
+                    <img src="public/img/items/cgi_cover.webp" alt="Image" class="img">
                   </div>
                   <a class="legend" href="projects/project_template.php?p=cgi">
                     <h3 class="title-company display-3">CGI</h3>
@@ -299,7 +311,7 @@
               <li class="slide-item swiper-slide">
                 <div class="item-wrapper">
                   <div class="illustr">
-                    <img src="public/img/items/bob_cover.jpg" alt="Image" class="img">
+                    <img src="public/img/items/bob_cover.webp" alt="Image" class="img">
                   </div>
                   <a class="legend" href="projects/project_template.php?p=bob">
                     <h3 class="title-company display-3">Bob Booking</h3>
@@ -538,8 +550,8 @@
   <script src="./public/js/form_script.js"></script>
   <!-- Javascript main files -->
   <script src="./public/js/main.js"></script>
-  <chat-bot platform_id="b54b64ad-06ca-4cf5-b144-0b0584d73187" user_id="118aea26-d8c5-491e-9f3d-8fa4b88f8120" chatbot_id="96ef1522-8131-47ed-8e44-cc2b85a5ed7b"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
+  <!-- <chat-bot platform_id="b54b64ad-06ca-4cf5-b144-0b0584d73187" user_id="118aea26-d8c5-491e-9f3d-8fa4b88f8120" chatbot_id="96ef1522-8131-47ed-8e44-cc2b85a5ed7b"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 </body>
 <script src="./public/js/timeline.js"></script>
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 </html>

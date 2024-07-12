@@ -1,5 +1,5 @@
     <div class="section section-twoside fp-auto-height-responsive section-item" data-section="bob">
-      <div class="section-cover-tier mask-black" style="background-image:url('../public/img/items/bob_cover.jpg')">
+      <div class="section-cover-tier mask-black" style="background-image:url('../public/img/items/bob_cover.webp')">
       </div>
       <div class="section-wrapper largewidth">
         <div class="item row">
@@ -20,7 +20,7 @@
                         <p class="mb-0 t-nowrap"></p>
                         <p class="mb-0 t-nowrap"><?= $project['bob_dates'] ?> </p>
                         <p class="mb-0 t-nowrap">
-                          <a href="https://bobelweb.eu/" target="_blank"> Bob El Web </a> 
+                          <a href="https://bob-booking.com" target="_blank"> Bob El Web </a> 
                         </p>
                       </div>
                     </div>

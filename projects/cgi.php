@@ -1,5 +1,5 @@
 <div class="section section-twoside fp-auto-height-responsive section-item" data-section="cgi">
-  <div class="section-cover-tier mask-black" style="background-image:url('../public/img/items/cgi_cover.jpg')">
+  <div class="section-cover-tier mask-black" style="background-image:url('../public/img/items/cgi_cover.webp')">
   </div>
   <div class="section-wrapper largewidth">
     <div class="item row">
