@@ -33,8 +33,11 @@
   <link href="./../fonts/ionicons.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link href="./../fonts/font-awesome.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-
-
+  <!-- Images preload -->
+  <link rel="preload" href=" ./../public/img/items/bob_cover.webp" as="image">
+  <link rel="preload" href=" ./../public/img/items/cgi_cover.webp" as="image">
+  <link rel="preload" href=" ./../public/img/items/syspay_cover.webp" as="image">
+ 
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="./../css/pageloader.css">
 
@@ -49,7 +52,7 @@
 
   <!-- add alt layout here -->
   <link rel="stylesheet" href="./../css/style-default.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="./../public/js/vendor/modernizr-2.7.1.min.js" defer></script>
 </head>
 

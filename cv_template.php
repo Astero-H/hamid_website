@@ -6,7 +6,7 @@
   <title><?=$_ENV["SITE_TITLE"]?> </title>
   <meta name="description" content="">
   <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <!-- Facebook Meta -->
+
   <meta property="og:url" content="https://hamid-hennane.fr">
   <meta property="og:title" content="Abdel Hamid Hennane">
   <meta property="og:description" content="This is the personal website of Abdel Hamid Hennane">
@@ -14,12 +14,18 @@
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+
   <!-- Favicon.ico  -->
   <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
   <link rel="manifest" href="./favicon/site.webmanifest">
 
+    <!-- Images preload -->
+  <link rel="preload" href=" ./../public/img/items/bob_cover.webp" as="image">
+  <link rel="preload" href=" ./../public/img/items/cgi_cover.webp" as="image">
+  <link rel="preload" href=" ./../public/img/items/syspay_cover.webp" as="image">
+ 
   <!-- Web fonts and Web Icons -->
   <link rel="stylesheet" href="./fonts/opensans/stylesheet.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="./fonts/bebas/stylesheet.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -39,7 +45,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preload" as="style"  href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <style>
-    .anim-2.size-2 {
+    h4.anim-2.size-2 {
       font-size: 24px; 
     }
   </style>
@@ -47,7 +53,7 @@
   <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
   <link rel="stylesheet" href="./css/timeline.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="./public/js/vendor/modernizr-2.7.1.min.js" defer></script>
 </head>
 
@@ -541,17 +547,17 @@
   <!-- All Javascript plugins goes here -->
   <script src="./public/js/vendor/jquery-1.12.4.min.js"></script>
   <!-- All vendor scripts -->
-  <script src="./public/js/vendor/scrolloverflow.min.js"></script>
-  <script src="./public/js/vendor/all.js"></script>
-  <script src="./public/js/particlejs/particles.min.js"></script>
+  <script src="./public/js/vendor/scrolloverflow.min.js" defer></script>
+  <script src="./public/js/vendor/all.js" defer></script>
+  <script src="./public/js/particlejs/particles.min.js" defer></script>
   <!-- Countdown script -->
-  <script src="./public/js/jquery.downCount.js"></script>
+  <script src="./public/js/jquery.downCount.js" defer></script>
   <!-- Form script -->
-  <script src="./public/js/form_script.js"></script>
+  <script src="./public/js/form_script.js" defer></script>
   <!-- Javascript main files -->
   <script src="./public/js/main.js"></script>
   <!-- <chat-bot platform_id="b54b64ad-06ca-4cf5-b144-0b0584d73187" user_id="118aea26-d8c5-491e-9f3d-8fa4b88f8120" chatbot_id="96ef1522-8131-47ed-8e44-cc2b85a5ed7b"><a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a></chat-bot><script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script> -->
 </body>
-<script src="./public/js/timeline.js"></script>
+<script src="./public/js/timeline.js" defer></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 </html>
